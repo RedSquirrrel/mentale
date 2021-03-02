@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+  --paragraph: 'Bitter', serif;
+  --paragraph-Title: 'Poiret One', cursive;
+  --main-Tile: 'Rajdhani', sans-serif;
+  --icon-Text: 'Courgette', cursive;
+  --maxWidth: 1280px;
+  --centerColumn: min(60ch, calc(100vw - 1rem));
+  --rowGap: 5rem;
+  --gap: 1rem;
+
+  /* shadows */
+  --smShadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.25);
+  --mdShadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.25);
+  --lgShadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+
+  /*! light mode */
+
+  --background: #eee;
+  --nav-color: linear-gradient(72deg, rgba(57, 144, 255, 1) 28%, rgba(78, 171, 255, 1) 28%);
+  --title: #00d5ff;
+  --link-a-mentale: #fff;
+  --a-hover: rgb(49, 49, 49);
+  --text-color: rgb(148, 148, 148);
+
+  --section-1-bg: #fff;
+  --section-2-bg: #e1e1e1;
+  --section-3-bg: rgb(103, 197, 197);
+  --footer-bg: rgb(0, 139, 226);
+  --footer-gradient-bg: linear-gradient(
+    77deg,
+    rgba(0, 139, 226, 1) 25%,
+    rgba(56, 168, 255, 1) 25%,
+    rgba(56, 168, 255, 1) 75%,
+    rgba(112, 193, 255, 1) 75%
+  );
+  --footer-links: #1100ff;
+}
+
+[data-theme='dark'] {
+  --background: #121212;
+  --nav-color: rgb(51, 51, 51);
+  --title: #c300ff;
+  --link-a-mentale: #6c63ff;
+  --a-hover: #000;
+  --text-color: rgb(224, 219, 219);
+
+  --section-1-bg: #1e1e1e;
+  --section-2-bg: #111111;
+  --section-3-bg: rgba(209, 31, 31, 0.9);
+
+  --footer-bg: rgb(117, 0, 226);
+  --footer-gradient-bg: linear-gradient(
+    77deg,
+    rgba(117, 0, 226, 1) 25%,
+    rgba(170, 56, 255, 1) 25%,
+    rgba(170, 56, 255, 1) 75%,
+    rgba(193, 112, 255, 1) 75%
+  );
+  --footer-links: #ff00dd
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: clamp(100%, 1rem + 0.25vw, 2rem);
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+
+/* h1 {
+  font-size: clamp(2rem, 2rem + 1vw, 3rem);
+} */
+h2 {
+  font-size: clamp(1.5rem, 1.5rem + 1vw, 2.5rem);
+}
+h3 {
+  font-size: clamp(1.25rem, 1.25rem + 0.75vw, 2.25rem);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--link-a-mentale);
+  font-family: var(--paragraph-Title);
+  /* border-bottom: 2px solid transparent; */
+  transition: 0.2s all ease-in;
+}
+
+.icon{
+  width: 40px;  
+  margin-right: 0.5rem;
+}
+
+
+
+ul,
+li{
+  list-style: none;
+}
+
+li:hover {
+  border-bottom: 2px solid var(--link-a-mentale);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.nav {
+  background: var(--nav-color);
+}
+
+#home {
+  background: var(--section-1-bg);
+}
+#video_info {
+  background: var(--section-2-bg);
+}
+
+#footer {
+  background: var(--footer-bg);
+  background: var(--footer-gradient-bg);
+}

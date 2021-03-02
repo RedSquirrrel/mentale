@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  top: 0;
+  box-shadow: var(--smShadow);
+  border-bottom: 1px solid rgb(121, 118, 118);
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.menu {
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentale {
+  font-family: var(--paragraph-Title);
+  text-transform: uppercase;
+  align-self: center;
+  font-size: 1rem;
+  color: var(--link-a-mentale);
+}

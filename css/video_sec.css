@@ -1,0 +1,41 @@
+.video-wrapper {
+  display: grid;
+  gap: var(--gap);
+  justify-items: center;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  grid-column: 2;
+  /* margin-bottom: 2rem; */
+  /* margin-right: 2rem; */
+}
+
+.viedo {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.yt-holder {
+  overflow: hidden;
+  padding-bottom: 56%;
+  position: relative;
+  height: 0;
+}
+
+.viedo iframe {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.video-paragraph {
+  display: grid;
+  gap: var(--gap);
+  justify-items: start;
+  max-width: 50ch;
+}
+
+.video-paragraph p {
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  font-family: var(--paragraph);
+  color: var(--text-color);
+}

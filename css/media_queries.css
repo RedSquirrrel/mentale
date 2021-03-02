@@ -1,0 +1,129 @@
+/* vertical tablet */
+@media only screen and (min-width: 768px) {
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-title {
+    height: 20vh;
+    margin-top: 4.5rem;
+    width: 100%;
+  }
+
+  img.top_img {
+    width: 100%;
+  }
+
+  .title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .first {
+    display: grid;
+    gap: var(--gap);
+    justify-items: start;
+    max-width: 60ch;
+  }
+
+  .video-wrapper {
+    display: flex;
+    gap: var(--gap);
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .video-paragraph {
+    max-width: 60ch;
+  }
+
+  .footer_paragraph {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+}
+
+/* Desctop size */
+@media only screen and (min-width: 1024px) {
+  .menu {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .main-title {
+    height: 40vh;
+    margin-top: 4.5rem;
+    min-width: 100%;
+  }
+
+  .title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .line {
+    margin-top: 1rem;
+    margin-bottom: 2.9rem;
+    width: 90%;
+    height: 80px;
+  }
+
+  .first {
+    grid-template-columns: 80ch 50ch;
+    justify-content: center;
+    grid-column: 1 / -1;
+  }
+
+  .svg {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .video-wrapper {
+    display: grid;
+    grid-template-columns: 50ch 80ch;
+    justify-content: center;
+    grid-column: 1 / -1;
+  }
+
+  .viedo {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .yt-holder {
+    overflow: hidden;
+    padding-bottom: 56%;
+    position: relative;
+    height: 0;
+  }
+
+  .viedo iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer_paragraph {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+}
