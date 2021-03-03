@@ -1,3 +1,18 @@
+@media only screen and (max-width: 280px) {
+  main {
+    display: grid;
+    grid-template-columns: auto var(--centerColumn);
+    /* row-gap: (--rowGap); */
+    margin: 0 auto;
+  }
+
+  main > * {
+    grid-column: 1;
+    margin: 0 auto;
+    /* padding: 0 var(--gap); */
+  }
+}
+
 /* vertical tablet */
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
@@ -27,7 +42,7 @@
     display: grid;
     gap: var(--gap);
     justify-items: start;
-    max-width: 60ch;
+    min-width: 60ch;
   }
 
   .video-wrapper {
@@ -44,9 +59,12 @@
     align-items: center;
     margin-bottom: 1rem;
   }
+  .yt-holder {
+    width: 100%;
+  }
 
-  .video-paragraph {
-    max-width: 60ch;
+  .video-paragraph p {
+    min-width: 60ch;
   }
 
   .footer_paragraph {
@@ -81,7 +99,7 @@
   .line {
     margin-top: 1rem;
     margin-bottom: 2.9rem;
-    width: 90%;
+    width: 50.61rem;
     height: 80px;
   }
 
@@ -101,6 +119,9 @@
     grid-template-columns: 50ch 80ch;
     justify-content: center;
     grid-column: 1 / -1;
+    margin: 0 auto;
+    align-items: center;
+    gap: 5rem;
   }
 
   .viedo {
@@ -110,15 +131,26 @@
 
   .yt-holder {
     overflow: hidden;
-    padding-bottom: 56%;
+    padding-bottom: 68%;
     position: relative;
     height: 0;
+    width: 100%;
   }
 
   .viedo iframe {
     position: absolute;
     height: 100%;
     width: 100%;
+  }
+
+  .video-line {
+    margin-top: -1.3rem;
+    height: 57px;
+    width: 50rem;
+  }
+
+  .video-paragraph p {
+    line-height: 2.1rem;
   }
 
   .footer_paragraph {
