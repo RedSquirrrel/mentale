@@ -1,3 +1,7 @@
+#video_info {
+  background: var(--section-2-bg);
+}
+
 .video-wrapper {
   /* display: grid;
   gap: var(--gap);

@@ -3,6 +3,7 @@ main {
   grid-template-columns: auto var(--centerColumn) auto;
   row-gap: (--rowGap);
   margin: 0 auto;
+  background-color: var(--main-background);
 }
 
 main > * {

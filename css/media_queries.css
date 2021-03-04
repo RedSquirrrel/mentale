@@ -76,6 +76,11 @@
 
 /* Desctop size */
 @media only screen and (min-width: 1024px) {
+  .nav-wrapper {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   .menu {
     font-weight: 300;
     display: flex;

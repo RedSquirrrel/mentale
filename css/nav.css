@@ -31,5 +31,65 @@ header {
   text-transform: uppercase;
   align-self: center;
   font-size: 1rem;
-  color: var(--link-a-mentale);
+  /* color: var(--link-a-mentale); */
+  color: #fff;
+}
+
+/* dark mode */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 25px;
+  /* top: 30px; */
+}
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  width: 50px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: #fff;
+  bottom: 2px;
+  content: '';
+  left: 3px;
+  position: absolute;
+  transition: 0.4s;
+  height: 20px;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background: var(--footer-bg);
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
 }

@@ -1,4 +1,7 @@
-.first {
+/* #home {
+  background: var(--section-1-bg);
+} */
+*/ .first {
   display: grid;
   justify-items: center;
   /* justify-items: start; */
