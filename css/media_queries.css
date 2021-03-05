@@ -17,7 +17,16 @@
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  li {
+    margin-right: 5rem;
+  }
+
+  .mentale {
+    margin-right: 2rem;
   }
 
   .main-title {
@@ -36,6 +45,7 @@
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: clamp(2.5rem, 5vw, 4rem);
+    text-align: center;
   }
 
   .first {
@@ -77,15 +87,21 @@
 /* Desctop size */
 @media only screen and (min-width: 1024px) {
   .nav-wrapper {
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
   }
+
   .menu {
     font-weight: 300;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+  }
+
+  .mentale {
+    margin-right: 10rem;
+  }
+
+  .theme-switch-wrapper {
+    right: 100px;
   }
 
   .main-title {
@@ -112,6 +128,7 @@
     grid-template-columns: 80ch 50ch;
     justify-content: center;
     grid-column: 1 / -1;
+    gap: 5rem;
   }
 
   .svg {
@@ -119,19 +136,19 @@
     min-height: 100%;
   }
 
-  .video-wrapper {
+  #video_info {
     display: grid;
-    grid-template-columns: 50ch 80ch;
+    grid-template-columns: 52ch 80ch;
     justify-content: center;
     grid-column: 1 / -1;
     margin: 0 auto;
     align-items: center;
     gap: 5rem;
+    min-width: 100vw;
   }
 
-  .viedo {
-    max-width: 1500px;
-    margin: 0 auto;
+  .video-wrapper {
+    min-width: 550px;
   }
 
   .yt-holder {
@@ -139,12 +156,6 @@
     padding-bottom: 68%;
     position: relative;
     height: 0;
-    width: 100%;
-  }
-
-  .viedo iframe {
-    position: absolute;
-    height: 100%;
     width: 100%;
   }
 
