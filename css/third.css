@@ -1,0 +1,32 @@
+.third {
+  margin: 0 auto;
+  height: 60vh;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+}
+
+.t_line {
+  margin-bottom: 3rem;
+  box-shadow: 0px 1px 0px 0px rgb(170, 170, 170);
+  width: 80%;
+  height: 120px;
+  font-size: clamp(0.5rem, 8vw, 2rem);
+}
+
+h1.t_para-title {
+  font-size: clamp(0.2rem, 6vw, 2rem);
+  font-family: var(--paragraph-Title);
+  color: var(--text-color);
+}
+
+.t_paragraph p {
+  max-width: 55ch;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-family: var(--paragraph);
+  color: var(--text-color);
+  line-height: 1.6;
+}

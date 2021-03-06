@@ -1,0 +1,44 @@
+.s_first {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.top {
+  margin-top: 5rem;
+  margin-bottom: -10rem;
+}
+
+.secondTop {
+  background: var(--secondTop);
+}
+
+.img_2,
+.img_3 {
+  margin-top: 2rem;
+  width: 60%;
+  min-height: 60%;
+}
+
+.s_line {
+  margin-bottom: 1rem;
+  box-shadow: 0px 1px 0px 0px rgb(170, 170, 170);
+  width: 60%;
+  height: 90px;
+  font-size: clamp(0.5rem, 8vw, 2rem);
+}
+.s_para-title {
+  font-size: clamp(0.2rem, 6vw, 2rem);
+  font-family: var(--paragraph-Title);
+  color: var(--text-color);
+}
+.s_paragraph {
+  max-width: 55ch;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-family: var(--paragraph);
+  color: var(--text-color);
+  line-height: 1.6;
+}

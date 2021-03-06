@@ -25,7 +25,9 @@ li {
   margin-right: 1rem;
 }
 
-a:hover {
+.hover:hover:nth-child(1),
+.hover:hover:nth-child(2),
+.hover:hover:nth-child(3) {
   /* border-bottom: 2px solid var(--link-a-mentale); */
   border-bottom: 1px solid #fff;
   transition: 0.3s;

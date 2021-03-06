@@ -39,6 +39,7 @@
     rgba(112, 193, 255, 1) 75%
   );
   --footer-links: #1100ff;
+  --secondTop: #e1e1e1;
 }
 
 [data-theme='dark'] {
@@ -62,7 +63,8 @@
     rgba(170, 56, 255, 1) 75%,
     rgba(193, 112, 255, 1) 75%
   );
-  --footer-links: #ff00dd
+  --footer-links: #ff00dd;
+  --secondTop:#111111;
 }
 
 *,
@@ -84,7 +86,7 @@ body {
   font-size: clamp(100%, 1rem + 0.25vw, 2rem);
   display: grid;
   grid-template-rows: auto 1fr 1fr auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1,
