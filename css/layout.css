@@ -8,7 +8,7 @@ main {
 
 main > * {
   grid-column: 2;
-  /* padding: 0 var(--gap); */
+  padding: 0 var(--gap);
 }
 
 .full-width {

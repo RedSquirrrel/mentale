@@ -19,8 +19,9 @@
 .img_2,
 .img_3 {
   margin-top: 2rem;
-  width: 60%;
-  min-height: 60%;
+  width: 50vw;
+  min-height: 30vh;
+  /* object-fit: cover; */
 }
 
 .s_line {
