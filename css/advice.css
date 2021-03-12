@@ -37,5 +37,5 @@ h1.t_para-title {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-family: var(--paragraph);
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 2;
 }

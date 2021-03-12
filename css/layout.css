@@ -2,8 +2,10 @@ main {
   display: grid;
   grid-template-columns: auto var(--centerColumn) auto;
   row-gap: (--rowGap);
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-color: var(--main-background);
+  min-width: 90%;
+  margin: 0 -3rem;
 }
 
 main > * {
@@ -13,7 +15,7 @@ main > * {
 
 .full-width {
   grid-column: 1/-1;
-  padding: var(--rowGap) var(--gap);
+  /* padding: var(--rowGap) var(--gap); */
 }
 
 .nav-wrapper,

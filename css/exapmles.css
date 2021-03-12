@@ -15,13 +15,24 @@
 .secondTop {
   background: var(--secondTop);
 }
+.advice_title_para {
+  margin: 2rem;
+}
 
-.img_2,
+.img_2 {
+  margin-top: 2rem;
+  width: 80%;
+  min-height: 20%;
+  object-fit: cover;
+  margin: 2rem auto;
+}
+
 .img_3 {
   margin-top: 2rem;
-  width: 50vw;
-  min-height: 30vh;
-  /* object-fit: cover; */
+  width: 80%;
+  min-height: 20%;
+  object-fit: cover;
+  margin: 2rem auto;
 }
 
 .s_line {
@@ -32,7 +43,7 @@
   font-size: clamp(0.5rem, 8vw, 2rem);
 }
 .s_para-title {
-  font-size: clamp(0.2rem, 6vw, 2rem);
+  font-size: clamp(0.2rem, 5vw, 2rem);
   font-family: var(--paragraph-Title);
   color: var(--text-color);
 }

@@ -1,6 +1,7 @@
 .first {
   height: 55vh;
   width: 90%;
+  margin-right: -2rem;
 }
 
 .main-title {
@@ -33,6 +34,10 @@ img.top_img {
   /* object-fit: cover; */
 }
 
+.title_para {
+  margin-top: 2rem;
+}
+
 .line {
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -52,5 +57,5 @@ h1.para-title {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-family: var(--paragraph);
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 2;
 }

@@ -2,22 +2,25 @@
   background: var(--footer-gradient-bg);
   bottom: 0;
   left: 0;
+  height: 40vh;
 }
 
 footer {
-  height: 40vh;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  position: relative;
 }
 
 .footer-wrapper {
   position: absolute;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   max-width: 90%;
   text-align: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-top: 3rem;
 }
 
 .footer_paragraph {
