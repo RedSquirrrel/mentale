@@ -2,7 +2,7 @@
   background: var(--footer-gradient-bg);
   bottom: 0;
   left: 0;
-  height: 40vh;
+  height: 50vh;
 }
 
 footer {
@@ -36,7 +36,6 @@ footer {
   align-content: center;
   flex-direction: column;
   margin-top: 1.5rem;
-  /* gap: 5rem; */
 }
 .email {
   margin-top: 2rem;

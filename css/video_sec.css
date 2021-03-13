@@ -21,6 +21,10 @@
   border: 3px solid rgb(90, 89, 89);
 }
 
+.wrap {
+  margin-top: 15rem;
+}
+
 .yt-holder {
   width: 100%;
   max-width: 100%;
@@ -41,7 +45,7 @@
 }
 
 .video-paragraph-container {
-  margin-top: -5rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

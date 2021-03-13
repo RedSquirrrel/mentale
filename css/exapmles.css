@@ -1,4 +1,29 @@
-.s_first {
+.examples {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.girl-bg {
+  background: var(--main-background);
+}
+
+.boy-bg {
+  background: var(--section-2-bg);
+}
+
+.girl_first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.boy_first {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -7,50 +32,43 @@
   margin: 0 auto;
 }
 
-.top {
-  margin-top: 5rem;
-  margin-bottom: -10rem;
-}
-
-.secondTop {
-  background: var(--secondTop);
-}
 .advice_title_para {
   margin: 2rem;
 }
 
 .img_2 {
   margin-top: 2rem;
-  width: 80%;
   min-height: 20%;
-  object-fit: cover;
   margin: 2rem auto;
 }
 
 .img_3 {
   margin-top: 2rem;
-  width: 80%;
+  width: auto;
   min-height: 20%;
-  object-fit: cover;
   margin: 2rem auto;
 }
 
-.s_line {
+.girl_line,
+.boy_line {
   margin-bottom: 1rem;
   box-shadow: 0px 1px 0px 0px rgb(170, 170, 170);
-  width: 60%;
-  height: 90px;
+  width: 90%;
+  height: 20px;
   font-size: clamp(0.5rem, 8vw, 2rem);
 }
+
 .s_para-title {
   font-size: clamp(0.2rem, 5vw, 2rem);
   font-family: var(--paragraph-Title);
   color: var(--text-color);
 }
-.s_paragraph {
+
+.girl_paragraph,
+.boy_paragraph {
   max-width: 55ch;
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-family: var(--paragraph);
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 2.6;
 }
