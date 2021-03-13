@@ -4,6 +4,8 @@
 
 ## What you can do to stay motivated?
 
+https://redsquirrrel.github.io/mentale/
+
 <hr>
 <br>
 
